@@ -1,0 +1,6 @@
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit">
+    <a href="{% url 'movieapp:detail' movie.id %}" ><input type="button" value="Cancel"> </a>
+</form>
